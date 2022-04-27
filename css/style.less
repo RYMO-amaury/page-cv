@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+@red: red;
+@black: #0e0d0d;
+header{
+  .classTitre{
+      h1{
+          text-align: center;
+          font-size: 32px;
+      }
+      h2{
+          text-align: center;
+          font-size: 32px;
+      }
+  }
+  .logo{
+      .courtHr{
+          width: 40%;
+      }
+  }
+}
+body {
+  font-size: 14px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.resume {
+  width: 800px;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+  border: solid 1px #d4ecf5;
+}
+
+.resume .resume_left {
+  width: 280px;
+  background: #0bb5f4;
+}
+
+.resume .resume_left .resume_profile {
+  width: 100%;
+  height: auto;
+}
+
+.resume .resume_left .resume_profile img {
+  display: flex;
+  margin: 40px auto;
+  width: 35%;
+  height: 35%;
+}
+
+.resume .resume_left .resume_content {
+  padding: 0 25px;
+}
+
+.resume .title {
+  margin-bottom: 20px;
+}
+
+.resume .resume_left .bold {
+  color: #fff;
+}
+
+.resume .resume_left .regular {
+  color: #b1eaff;
+}
+
+.resume .resume_item {
+  padding: 25px 0;
+  border-bottom: 2px solid #b1eaff;
+}
+
+.resume .resume_left .resume_item:last-child,
+.resume .resume_right .resume_item:last-child {
+  border-bottom: 0px;
+}
+
+.resume .resume_left ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.resume .resume_left ul li:last-child {
+  margin-bottom: 0;
+}
+
+.resume .resume_left ul li .icon {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  color: #0bb5f4;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+.resume .icon i,
+.resume .resume_right .resume_hobby ul li i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resume .resume_left ul li .data {
+  color: #b1eaff;
+}
+
+.resume .resume_left .resume_skills ul li {
+  display: flex;
+  margin-bottom: 10px;
+  color: #b1eaff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume .resume_left .resume_skills ul li .skill_name {
+  width: 25%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #009fd9;
+  position: relative;
+}
+
+.resume .resume_left .resume_skills ul li .skill_per {
+  width: 15%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+
+.resume .resume_left .resume_social .semi-bold {
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.resume .resume_right {
+  width: 520px;
+  background: #fff;
+  padding: 25px;
+}
+
+.resume .resume_right .bold {
+  color: #0bb5f4;
+}
+
+.resume .resume_right .resume_work ul,
+.resume .resume_right .resume_education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.resume .resume_right ul li {
+  position: relative;
+}
+
+.resume .resume_right ul li .date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.resume .resume_right ul li .info {
+  margin-bottom: 20px;
+}
+
+.resume .resume_right ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #0bb5f4;
+}
+
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 115px;
+  background: #0bb5f4;
+}
+
+.resume .resume_right .resume_hobby ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume .resume_right .resume_hobby ul li {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #0bb5f4;
+  border-radius: 50%;
+  position: relative;
+  color: #0bb5f4;
+}
+
+.resume .resume_right .resume_hobby ul li i {
+  font-size: 30px;
+}
+
+// .resume .resume_right .resume_hobby ul li:before {
+//   content: "";
+//   position: absolute;
+//   top: 40px;
+//   right: -52px;
+//   width: 50px;
+//   height: 2px;
+//   background: #0bb5f4;
+// }
+
+.resume .resume_right .resume_hobby ul li:last-child:before {
+  display: none;
+}
+
+// input
+
+.body1{
+  background-color: rgb(36, 36, 36);
+}
+.body2{
+  background-color: linear-gradient(#a99fb9,#0bb5f4,#000);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 25px;
+  }
+  .button{
+    position: relative;
+    width: 120px;
+    height: 40px;
+     
+     background: linear-gradient(0deg,#333 ,#000);
+     outline: none;
+     border-radius: 20px;
+    
+  }
+  .button:hover{
+    position: relative;
+    width: 120px;height: 40px;
+     
+     background: linear-gradient(0deg,#0bb5f4 ,#000);
+     outline: none;
+     border-radius: 20px;
+    
+  }
+  .checked
+  {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 1PX;
+    width: 80px;
+    height: 40px;
+     background: linear-gradient(0deg, #000 ,#6b6b6b);
+     border-radius: 20px;
+     box-shadow: 0 0 0 1px #232323;
+     transform: scale(.98,.96);
+     transition: .5s;
+  }
+  .checked:hover
+  {
+    content: '';
+    box-shadow: 0 0 0 2px #383838;
+    left: 38px;
+  }
+  .bulle{
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 70px;
+    width: 4px;
+    height: 4px;
+    background-color: #6b6b6b;
+    border-radius: 20px;
+  }
+  .checked:hover .bulle{
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 70px;
+    width: 4px;
+    height: 4px;
+    background-color: #0bb5f4;
+    border-radius: 20px;
+  }
+
+
+  /* séparation de page */
+
+  .button2{
+
+
+     position: relative;
+     width: 120px;height: 40px;
+      
+      background: linear-gradient(5deg,#f8f7f7 ,#d3d1d1);
+      outline: none;
+      border-radius: 20px;
+      box-shadow: 2px 2px 6px #bebebe,
+     -2px -2px 6px #fff;
+  }
+  .button2:hover{
+    position: relative;
+    width: 120px;height: 40px;
+     
+     background: linear-gradient(7deg,rgb(92, 85, 156) ,rgb(185, 178, 224),#fff);
+     outline: none;
+     border-radius: 20px;
+     box-shadow: 2px 2px 6px #bebebe,
+     -2px -2px 6px #fff;
+     
+  }
+  .checked2
+  {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 36PX;
+    width: 80px;
+    height: 40px;
+    
+     background: linear-gradient(0deg, #adadad,#fff);
+     border-radius: 20px;
+     box-shadow: 2px 2px 6px #bebebe,
+     -2px -2px 6px #fff;
+     transform: scale(.98,.96);
+     transition: .5s;
+  }
+  .checked2:hover
+  {
+    content: '';
+    box-shadow: 0 0 0 1px #c4c4c4;
+    background: linear-gradient(0deg, #adadad,#fff );
+    left: 4px;
+  }
+  .bulle2{
+
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 70px;
+    width: 4px;
+    height: 4px;
+    background-color: #a3a7a8;
+    border-radius: 20px;
+  }
+  .checked2:hover .bulle2{
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 70px;
+    width: 4px;
+    height: 4px;
+    background-color: rgb(122, 105, 218);
+    border-radius: 20px;
+
+  }
+
